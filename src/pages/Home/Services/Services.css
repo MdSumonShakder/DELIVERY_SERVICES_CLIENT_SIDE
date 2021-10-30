@@ -1,0 +1,17 @@
+.gum::after{
+  content: '';
+width: 160px;
+height: 5px;
+background-color:#ff5200;
+position: absolute;
+top: 60px;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+.gum{
+  position: relative;
+  color: #009688;
+}

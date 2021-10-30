@@ -1,0 +1,17 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.price{
+  display: block;
+}
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+.price{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+}
