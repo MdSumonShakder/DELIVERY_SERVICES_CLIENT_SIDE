@@ -5,13 +5,13 @@ import { useHistory } from 'react-router';
 
 
 const Service = ({ service }) => {
-  const { id, name, img, description, price } = service;
+  const { _id, name, img, description, price } = service;
 
 
   const history = useHistory();
 
-  const clickedDetails = id => {
-    const uri = `/details/${id}`;
+  const clickedDetails = _id => {
+    const uri = `/details/${_id}`;
     history.push(uri);
   }
 
@@ -22,8 +22,8 @@ const Service = ({ service }) => {
         <h5 className="text-primary fw-bolder ">{name}</h5>
         <h6>{price}</h6>
         <p>{description}</p>
-        <Link to={`/details/${id}`}>
-          <button onClick={() => clickedDetails(id)} className="btn btn-warning fw-bolder mb-2">Order No</button>
+        <Link to={`/details/${_id}`}>
+          <button onClick={() => clickedDetails(_id)} className="btn btn-warning fw-bolder mb-2">Order Now</button>
         </Link>
       </div>
     </div>

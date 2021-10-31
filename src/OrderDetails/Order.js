@@ -1,34 +1,29 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 const Order = () => {
   const { key } = useParams();
-  const [details, setDetails] = useState([]);
-  const [singleDetail, setSingleDetail] = useState({});
+  const [details, setDetails] = useState({});
+ 
   useEffect(() => {
-    fetch('/services.json')
+    fetch(`http://localhost:5000/Order/${key}`)
       .then(res => res.json())
       .then(data => setDetails(data))
   }, []);
 
-  useEffect(() => {
-    if (details.length > 0) {
-      const matchData = details.find(detail => detail.id == key)
-      setSingleDetail(matchData);
-    }
-
-
-  }, [details]);
-
-
+  
   return (
     <div>
-      <h1 className="mt-5 text-primary">This is OrderDetail: {key}</h1>
-      <h3 className="mt-3 text-dark">{singleDetail.name} </h3>
-      <p className="mt-3 text-danger fw-bolder">{singleDetail.price}</p>
-      <img className="box" src={singleDetail.img} alt="" />
+      <h1 className="gum text-primary">This is OrderDetail:{key}</h1>
+      <h3 className="mt-3 text-dark"><b className=" text-danger">NAME</b> : {details.name} </h3>
+      <p className="mt-3 text-danger fw-bolder">{details.price}</p>
+      <img className="box" src={details.img} alt="" /> <br /> <br />
+<Link to="/delete">
+<button className="btn btn-danger mt-3 text-white fw-bold">DELETE</button>
+</Link>
     </div>
   );
 };

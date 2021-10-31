@@ -10,6 +10,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Notfound from './pages/NotFound/Notfound';
 import Header from './pages/Shared/Header/Header';
 import AuthProvider from './Context/AuthProvider';
+import Delete from './pages/DeleteOrder/Delete';
 
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <PrivateRoute exact path="/delete">
+              <Delete></Delete>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
             </Route>
