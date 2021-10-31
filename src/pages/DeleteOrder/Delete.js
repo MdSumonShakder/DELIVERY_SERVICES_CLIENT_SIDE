@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+ import './Delete.css';
 
 
 const Delete = () => {
@@ -28,7 +28,7 @@ const Delete = () => {
   }
 
   return (
-    <div>
+    <div className="delete">
       <h1 className="gum text-primary fw-bolder mt-3 pb-5">ORDER DELETE </h1>
       {
         services.map(service => <div key={service.id}>

@@ -22,7 +22,7 @@ const Order = () => {
       <p className="mt-3 text-danger fw-bolder">{details.price}</p>
       <img className="box" src={details.img} alt="" /> <br /> <br />
 <Link to="/delete">
-<button className="btn btn-danger mt-3 text-white fw-bold">DELETE</button>
+<button className="btn btn-danger mt-3 text-white fw-bold">CANCEL ORDER</button>
 </Link>
     </div>
   );

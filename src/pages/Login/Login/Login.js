@@ -1,13 +1,17 @@
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../Hooks/useAuth";
 import './Login.css';
+
+
+
+
 const Login = () => {
   const { singInGoogle, setUsers, } = useAuth();
 
   const history = useHistory();
   const location = useLocation();
 
-  const url = location.state?.from || "/home";
+  const url = location.state?.from || '/home';
    
   const googleLogIn = () => {
     singInGoogle().then((res) => {

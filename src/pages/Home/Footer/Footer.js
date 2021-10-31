@@ -36,11 +36,9 @@ const Footer = () => {
             <div className="footer-text">
                 <h5>Our Services</h5>
                 <ul>
-                  <li>Pullup</li>
-                  <li>Deadlift</li>
-                  <li>Back Squat</li>
-                  <li>Bench Press</li>
-                  <li>Dumbbell romanian</li>
+                  <li>Free Home Delivery</li>
+                  <li>Free Chicken In White Wine</li>
+                  <li> Free Water</li>
                 </ul>
               </div>
             </div>

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+  .delete img {
+    width: 310px;
+    border-radius: 20px;
+  }
+}
+
+

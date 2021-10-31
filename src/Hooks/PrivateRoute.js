@@ -7,8 +7,8 @@ import useAuth from './useAuth';
 
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { users, isLoading } = useAuth();
-    if (isLoading) {
+    const { users, setLoading } = useAuth();
+    if (setLoading) {
         return <Spinner animation="border" variant="danger" />
     }
     return (
