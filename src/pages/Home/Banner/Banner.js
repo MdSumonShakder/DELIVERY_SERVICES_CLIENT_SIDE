@@ -18,7 +18,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Exercise and stay healthy</h3>
+            <h3>Eat good food and stay healthy</h3>
             <p className="text-warning fw-bolder">In congue lorem dignissim leo lacinia efficitur  nam suscipit  viverra vel <br />cras cursus porta porttitor.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -29,7 +29,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Exercise and stay healthy</h3>
+            <h3>Eat good food and stay healthy</h3>
             <p className="text-warning fw-bolder">In congue lorem dignissim leo lacinia efficitur  nam suscipit  viverra vel <br />cras cursus porta porttitor.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -40,7 +40,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Exercise and stay healthy</h3>
+            <h3>Eat good food and stay healthy</h3>
             <p className="text-warning fw-bolder">In congue lorem dignissim leo lacinia efficitur  nam suscipit  viverra vel <br />cras cursus porta porttitor.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -51,7 +51,7 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Exercise and stay healthy</h3>
+            <h3>Eat good food and stay healthy</h3>
             <p className="text-warning fw-bolder">In congue lorem dignissim leo lacinia efficitur  nam suscipit  viverra vel <br />cras cursus porta porttitor.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -63,7 +63,7 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h3>Exercise and stay healthy</h3>
+            <h3>Eat good food and stay healthy</h3>
             <p  className="text-primary fw-bolder">Get special  newsletter to get free updates training this summer 50% off pay now.</p>
           </Carousel.Caption>
         </Carousel.Item>
