@@ -13,6 +13,8 @@ import AuthProvider from './Context/AuthProvider';
 import Delete from './pages/DeleteOrder/Delete';
 
 
+
+
 function App() {
   return (
     <div className="App">
@@ -34,7 +36,7 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
-            </Route>
+           </Route>
             <PrivateRoute exact path="/delete">
               <Delete></Delete>
             </PrivateRoute>
