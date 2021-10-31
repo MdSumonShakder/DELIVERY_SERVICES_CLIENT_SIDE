@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
- import './Delete.css';
+import './Delete.css';
 
 
 const Delete = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/Order`)
+    fetch(`https://dark-broomstick-22701.herokuapp.com/Order`)
       .then(res => res.json())
       .then(data => setServices(data));
   }, []);
 
 
   const clickedDelete = id => {
-    const url = `http://localhost:5000/Order/${id}`;
+    const url = `https://dark-broomstick-22701.herokuapp.com/Order/${id}`;
     fetch(url, {
       method: 'DELETE'
     })

@@ -9,7 +9,7 @@ const Order = () => {
   const [details, setDetails] = useState({});
  
   useEffect(() => {
-    fetch(`http://localhost:5000/Order/${key}`)
+    fetch(`https://dark-broomstick-22701.herokuapp.com/Order/${key}`)
       .then(res => res.json())
       .then(data => setDetails(data))
   }, []);
