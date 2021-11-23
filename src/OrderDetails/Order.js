@@ -9,7 +9,7 @@ const Order = () => {
   const [details, setDetails] = useState({});
  
   useEffect(() => {
-    fetch(`https://dark-broomstick-22701.herokuapp.com/Order/${key}`)
+    fetch(`http://localhost:5000/Order/${key}`)
       .then(res => res.json())
       .then(data => setDetails(data))
   }, []);
@@ -17,7 +17,7 @@ const Order = () => {
   
   return (
     <div>
-      <h1 className="gum text-primary">This is OrderDetail:{key}</h1>
+      <h1 className="gum text-primary">This is OrderDetail:{key.length}</h1>
       <h3 className="mt-3 text-dark"><b className=" text-danger">NAME</b> : {details.name} </h3>
       <p className="mt-3 text-danger fw-bolder">{details.price}</p>
       <img className="box" src={details.img} alt="" /> <br /> <br />

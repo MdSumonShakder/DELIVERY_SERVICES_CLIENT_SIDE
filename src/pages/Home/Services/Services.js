@@ -7,7 +7,7 @@ import './Services.css';
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch('https://dark-broomstick-22701.herokuapp.com/Order')
+    fetch('./services.json')
       .then(res => res.json())
       .then(data => setServices(data));
   }, []);
